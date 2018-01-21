@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+  
+<html>
+<head>
+      <title>Spring Boot - POST-GET AJAX Example</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="/bootstrap-4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+ 
+	<div class="container" style="padding: 5px; background-color: green">
+		<!-- Distance and trip number -->		
+		<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
+		  	<div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
+		  		<div class="card">
+					  <img src="/img/distance.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Distance</h5>
+						    <p class="card-text">2558 kms</p>
+						    <p class="card-text">+175.56 %</p>
+					  </div>
+				</div>
+		  	</div>
+		  	
+		  	<div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
+		  		<div class="card">
+					  <img src="/img/number.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Trip Number</h5>
+						    <p class="card-text">255</p>
+						    <p class="card-text">+175.56 %</p>
+					  </div>
+				</div>
+		  	</div>
+		</div>
+		
+		<!--maincontext, average distance, weekday Misc infos-->
+		<div class="row justify-content-start" style="padding: 20px; margin-top: 10px; margin-bottom: 10px;">
+		  	<div class="col-xs-12">
+		  		<h3>Informations Diverses (01/01/18 -08/01/18)</h3>
+		  		<h4><strong>Contexte routier principal:</strong> Urbain</h4>
+		  		<h4><strong>Distance moyenne:</strong> 36.5 kms</h4>
+		  		<h4><strong>Contexte principal:</strong> Semaine</h4>
+		  	</div>
+		</div>
+		
+		<!-- Efficiency + safety -->
+		<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
+		  	<div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
+				<div class="card">
+					  <img src="/img/efficiency.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Efficiency</h5>
+						    <p class="card-text">9.0</p>
+					  </div>
+				</div>
+			</div>
+		  	<div class="col-xs-4 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
+				<div class="card">
+					  <img src="/img/safety.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Safety</h5>
+						    <p class="card-text">7.6</p>
+					  </div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- acceleration, deceleration, main score -->
+		<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
+		  	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+				<div class="card">
+					  <img src="/img/speed-up.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Acceleration</h5>
+						    <p class="card-text">4.2</p>
+					  </div>
+				</div>
+			</div>
+		  	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+				<div class="card">
+					  <img src="/img/speed-down.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Deceleration</h5>
+						    <p class="card-text">5.4</p>
+					  </div>
+				</div>
+			</div>
+		  	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+				<div class="card">
+					  <img src="/img/score.svg" alt="..." class="card-img-top img-rounded" style="padding: 20px"/>
+					  <div class="card-body">
+						    <h5 class="card-title">Score</h5>
+						    <p class="card-text">8.3</p>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	<script src="/jquery/jquery-3.3.1.min.js"></script>    
+	<script src="/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+	<script src="/js/getrequest.js"></script>
+</body>
+</html>
